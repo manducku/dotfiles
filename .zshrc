@@ -5,7 +5,7 @@ export ZSH=/Users/HanwoolKim/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME=dieter
+ZSH_THEME="sammy"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -138,6 +138,7 @@ alias tree='tree -Csuh'    #  Nice alternative to 'recursive ls' ...
 alias p="python"
 alias v="vagrant"
 alias pro="cd ~/Documents/back-end/"
+alias awe="cd ~/Documents/back-end/awesomepose/awesomepose/"
 alias pipU="pip install --upgrade pip"
 alias brewI="brew install" 
 alias pipI="pip install"
@@ -154,7 +155,7 @@ export CLICOLOR=1
 # Set colors to match iTerm2 Terminal Colors
 export TERM=xterm-256color
 
-alias vi="vim"
+alias vi="mvim -v"
 
 #auto env config
 source /usr/local/opt/autoenv/activate.sh  
@@ -166,11 +167,11 @@ alias gp="git push"
 #alias pv="pyenv virtualenv"
 alias pe="pyenv"
 
-export VIM_APP_DIR=/Applications/
-export -f vi
-export -f vim 
-export -f gvim 
-export -f vimdiff 
+#export VIM_APP_DIR=/Applications/
+#export -f vi
+#export -f vim 
+#export -f gvim 
+#export -f vimdiff 
 
 #pyenv config 
 eval "$(pyenv init -)"
@@ -178,3 +179,6 @@ eval "$(pyenv init -)"
 #virtual env config
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+
+alias aws="/Users/HanwoolKim/Documents/aws/aws_ssh.sh"
+export PATH="$PATH:/usr/local/mysql/bin"
